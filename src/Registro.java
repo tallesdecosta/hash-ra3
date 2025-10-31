@@ -26,10 +26,10 @@ public class Registro
         return Integer.hashCode(codigo);
     }
 
-    //contrato
     @Override
     public String toString() {
         return String.format("%09d", codigo);
     }
 
 }
+
