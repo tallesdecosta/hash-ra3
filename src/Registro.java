@@ -11,7 +11,7 @@ public class Registro
         return codigo;
     }
 
-    //contrato
+    
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;
@@ -20,7 +20,7 @@ public class Registro
         return codigo == registro.codigo;
     }
 
-    // precisa p/ dois registros com mesmo código não ficarem com mesmo endereço
+    
     @Override
     public int hashCode() {
         return Integer.hashCode(codigo);
@@ -31,4 +31,5 @@ public class Registro
     public String toString() {
         return String.format("%09d", codigo);
     }
+
 }
