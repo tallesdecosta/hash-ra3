@@ -27,17 +27,16 @@ public class TabelaHashEncadeamento {
         Node atual = tabela[hashIndex];
         while (true) {
             if (atual.registro.getCodigo() == chave) {
-                return; // Chave duplicada encontrada, ignora inserção.
+                return;
             }
             if (atual.next == null) {
-                break; // Chegou ao final da lista.
+                break; 
             }
             colisoesInsercao++;
             atual = atual.next;
         }
 
-        // Se chegou aqui, a lista original tinha ao menos um elemento.
-        // A primeira ocupação conta como a colisão inicial.
+
         colisoesInsercao++;
         atual.next = novoNode;
     }
@@ -72,4 +71,5 @@ public class TabelaHashEncadeamento {
         }
         return tamanhos;
     }
+
 }
