@@ -30,10 +30,10 @@ public class TabelaHashSondagemQuadratica {
             }
 
             if (tabela[hashIndex].getCodigo() == chave) {
-                return; // Chave duplicada, não faz nada.
+                return; 
             }
 
-            // O slot está ocupado por outra chave, isso é uma colisão.
+           
             colisoesInsercao++;
             i++;
         } while (i < tamanho);
@@ -66,4 +66,5 @@ public class TabelaHashSondagemQuadratica {
     public Registro[] getTabela() {
         return tabela;
     }
+
 }
