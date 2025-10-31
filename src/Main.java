@@ -6,9 +6,6 @@ public class Main
 
     private static final long SEED = 42L;
 
-    // tamanho de tabela esquisito p/ garantir que não vai dar conflito com a função de %
-    // ex. se o tamanho da tabela for 1000, os numeros que tem 00 vão dar colisão pq tem padrão
-    // em comum com o tamanho da tabela
     private static final int[] TAMANHOS_TABELA = {1009, 10007, 100003};
     private static final int[] TAMANHOS_DADOS = {100, 1000, 10000};
 
@@ -172,4 +169,5 @@ public class Main
 
         System.out.printf("  - Análise de Gaps: Min=%d, Max=%d, Média=%.2f\n", minGap, maxGap, mediaGap);
     }
+
 }
